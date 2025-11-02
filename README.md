@@ -108,4 +108,5 @@ Las relaciones se visualizan frente a `Rango_notas` y `G3`, explorando tendencia
 ## 🧩 Conclusión general
 
 El análisis revela que el **rendimiento académico no depende de un solo factor**, sino de la interacción entre **hábitos personales y entorno familiar**.  
+
 Los estudiantes con **hábitos equilibrados** (estudio constante, salud mental estable, ocio moderado) y **apoyo familiar positivo** tienden a obtener **mejores resultados académicos**.
