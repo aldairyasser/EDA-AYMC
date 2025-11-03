@@ -83,7 +83,7 @@ Las relaciones se visualizan frente a `Rango_notas` y `G3`, explorando tendencia
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/aldairyasser/EDA-AYMC.git
+   git clone https://github.com/aldairyasser/EDA-HABITOS-ACADEMICOS-SITUACION-FAMILIAR.git
    cd EDA_Estudiante
    ```
 
