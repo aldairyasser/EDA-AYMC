@@ -107,7 +107,7 @@ def carga_datos():
 |social_media_hours| Numerica discreta | Horas diarias en redes sociales |
 |netflix_hours| Numerica discreta | Horas diarias viendo Netflix |
 |> *part_time_job*| Binario Booleano | Indica si el estudiante tiene empleo parcial |                
-|attendance_percentage| Numerica continua | Porcentaje de asistencia a clases |
+|> *attendance_percentage*| Numerica continua | Porcentaje de asistencia a clases |
 |sleep_hours| Numerica discreta | Horas promedio de sueño por día |
 |diet_quality| Categorica | Nivel de la calidad de la dieta |
 |exercise_frequency| Numerica discreta | Frecuencia semanal de ejercicio |
@@ -122,6 +122,8 @@ ya que para eso usaré los otros datasets, me gustaría destacar 2 datos: ''')
                 st.markdown("""
                         - part_time_job --> Si trabaja o no
                                             
+                        - attendance_percentage --> Asistencia a clase
+                            
                         - mental_health_rating --> Salud mental
                                             
                         > ¿Afectan a los hábitos o son hábitos?
@@ -508,8 +510,8 @@ def situ():
         st.subheader("⚙️ Configuración ⚙️")
 
         posibles_cat = [
-            "sex", "address", "famsize", "Pstatus", "Mjob", "Fjob", "guardian",
-            "famsup", "romantic", "Rango_edu_mother", "Rango_edu_father", "Rango_fam_rel"
+            "address", "famsize", "Pstatus", "Mjob", "Fjob", "guardian",
+            "famsup", "Rango_edu_mother", "Rango_edu_father", "Rango_fam_rel", "sex", "Walc","romantic"
         ]
 
         cat_vars = st.multiselect(
