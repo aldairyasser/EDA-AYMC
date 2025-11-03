@@ -8,46 +8,57 @@ def config_page():
     st.set_page_config(page_title = "EDA_AYMC", page_icon=":chart", layout = "centered")
 
 def home():
-    st.header("Hábitos académicos y Situación familiar")
+    st.header("🎓 Hábitos académicos y Situación familiar")
 
-    st.subheader("EDA")
+    st.subheader("Análisis Exploratorio de Datos (EDA)")
 
     st.image("./img/mini_eda_3.png", use_container_width="auto")
 
     st.markdown("""
-                El ***ministerio de educación*** de Portugal, quiere saber en base a los datos que tienen: 
-> ¿Qué afecta más al rendimiento acaémico, los hábitos estudiantiles o la situación familiar?
-                """)
+    El **Ministerio de Educación de Portugal** desea conocer, a partir de los datos recopilados:
+    > ¿Qué influye más en el rendimiento académico: los hábitos de estudio o la situación familiar?
+    """)
 
-    st.markdown("""En este EDA tenemos el estudio de una de las preguntas que más tiempo me ha acompañado en mi vida, 
-                desde que tengo uso de razón me recuerdo estudiando o teniendo que memorizar algo de temario para 
-                algún exámen. Recuerdo también compañeros que se le daban muy bien y que hasta le sobraba el tiempo 
-                para salir con sus amigos o de fiesta.
+    st.markdown("""
+    Este EDA nace de una de las preguntas que más curiosidad me ha generado a lo largo de mi vida.  
+    Desde pequeño he pasado horas estudiando, memorizando temarios y preparándome para exámenes, 
+    mientras veía a compañeros que parecían conseguir grandes resultados con menos esfuerzo e incluso con tiempo de sobra para disfrutar su vida social.
 
-Con el tiempo, la vida me junto con personas que el ambiente o la relación familiar no era como la mía y desde entonces me persigue 
-                esa pregunta, hoy a través de un pequeño EDA, quiero dar un poco de luz a este tema.
+    Con los años, conocí personas cuyo entorno familiar era muy distinto al mío, y esa observación reavivó una duda que siempre me ha acompañado:  
+                
+    **¿Hasta qué punto la familia o el entorno pueden condicionar el rendimiento académico de un estudiante o a sus hábitos?**
 
->> Decir que las conclusiones de este trabajo están sujetas a la muestra de los datos, que de este tema es 
-                muy escaso.
-                """)
+    A través de este proyecto de análisis exploratorio, intento arrojar algo de luz sobre esta cuestión, utilizando datos reales y una mirada analítica.  
+    > ⚠️ Las conclusiones obtenidas están limitadas por el tamaño y naturaleza de la muestra disponible.
+    """)
 
 #    st.write("Storytelling")
 
-    with st.expander("Storytelling"):
-        st.markdown("""Eres un analísta de datos que ha sido contratado por el **ministerio de educación** de Portugal en 2009, ellos te han 
-                    dado tres datasets, el primero de ellos es sobre los habitos académicos de los estudiantes, los otros dos 
-                    corresponden a la situación familiar de los estudiantes y sus notas en dos diferentes asignaturas.
-                    """)
+    with st.expander("📖 Storytelling"):
         st.markdown("""
-            > Negocio te ha pedido que respondas a las siguientes preguntas:
+        Te encuentras en 2009. Eres un **analista de datos** contratado por el **Ministerio de Educación de Portugal**. 
+                     
+        El ministerio te ha proporcionado tres conjuntos de datos:  
                     
-            * ¿Dentro de los hábitos académicos, quiere saber recomendaciones para los alumnos?
-            * ¿Dentro de lo familiar, cúales son las conclusiones a las que llegas?
-            * ¿A qué parte deberíamos aportar con más recursos?""")
+        - Uno sobre los **hábitos académicos** de los estudiantes
+                    
+        - Otros dos que describen su **situación familiar** y sus **calificaciones finales** en distintas asignaturas.
+
+        Tu misión es clara: analizar, comparar y extraer conclusiones que ayuden a entender mejor los factores que determinan los resultados escolar.
+        """)
+        st.markdown("""
+        > El área de negocio te ha pedido responder a tres grandes preguntas:
+                    
+        * ¿Qué recomendaciones se pueden dar a los estudiantes respecto a sus hábitos académicos?
         
-    with st.expander("Links a Datasets"):
-        st.markdown("""[Datasets de los hábitos académicos](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance)""")
-        st.markdown("""[Datasets de la situación familiar](https://archive.ics.uci.edu/dataset/320/student+performance)""")
+        * ¿Qué conclusiones se pueden extraer sobre la influencia del entorno familiar?
+                    
+        * ¿En qué aspecto debería el ministerio invertir más recursos: en mejorar los hábitos o en fortalecer el entorno familiar?
+        """)
+        
+    with st.expander("🔗 Links a Datasets"):
+        st.markdown("""[📊 Datasets de los hábitos académicos](https://www.kaggle.com/datasets/jayaantanaath/student-habits-vs-academic-performance)""")
+        st.markdown("""[🏡 Datasets de la situación familiar](https://archive.ics.uci.edu/dataset/320/student+performance)""")
 
 def carga_datos(): 
     uploaded_file = st.file_uploader("Cargar CSV", type=["csv"], accept_multiple_files=True)
