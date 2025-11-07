@@ -116,7 +116,7 @@ def carga_datos():
                         ''')
             st.markdown('''El dataset venía con datos que no voy a usar, como por ejemplo, la calidad del internet ( >80% con 
 buen internet ), clases extracurriculares, por no ser trascendente, así como el nivel de educaión de los padres, 
-ya que para eso usaré los otros datasets, me gustaría destacar 2 datos: ''')
+ya que para eso usaré los otros datasets, me gustaría destacar 3 datos: ''')
             
             with st.expander("Debate"):
                 st.markdown("""
