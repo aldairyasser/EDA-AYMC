@@ -25,7 +25,7 @@ def home():
     mientras veía a compañeros que parecían conseguir grandes resultados con menos esfuerzo e incluso con tiempo de sobra para disfrutar su vida social.
 
     Con los años, conocí personas cuyo entorno familiar era muy distinto al mío, y esa observación reavivó una duda que siempre me ha acompañado:  
-                
+    
     **¿Hasta qué punto la familia o el entorno pueden condicionar el rendimiento académico de un estudiante o a sus hábitos?**
 
     A través de este proyecto de análisis exploratorio, intento arrojar algo de luz sobre esta cuestión, utilizando datos reales y una mirada analítica.  
@@ -64,6 +64,34 @@ def carga_datos():
     uploaded_file = st.file_uploader("Cargar CSV", type=["csv"], accept_multiple_files=True)
 
     datos = len(uploaded_file)
+
+    with st.expander("📥 Descargar datos habitos"):
+        with open("student_habits_performance.csv", "rb") as f:
+            st.download_button(
+                label="Descargar habitos",
+                data=f,
+                file_name="student_habits_performance.csv",
+                mime="text/csv"
+            )
+
+    with st.expander("📥 Descargar datos situación personal"):
+        st.markdown("Subir los 2 archivos")
+        with open("student-mat.csv", "rb") as f:
+            st.download_button(
+                label="Situación primera clase",
+                data=f,
+                file_name="student-mat.csv",
+                mime="text/csv"
+            )
+        with open("student-por.csv", "rb") as f:
+            st.download_button(
+                label="Situación segunda clase",
+                data=f,
+                file_name="student-por.csv",
+                mime="text/csv"
+            )
+
+    st.markdown("---")
 
     if uploaded_file:
         if datos == 1:
