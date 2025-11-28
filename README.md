@@ -5,6 +5,8 @@
 
 https://eda-habitos-academicos-situacion-familiar.streamlit.app/
 
+---
+
 ## Contenido
   - [📘 Descripción general](#-descripción-general)
   - [🎯 Objetivos del proyecto](#-objetivos-del-proyecto)
@@ -14,6 +16,8 @@ https://eda-habitos-academicos-situacion-familiar.streamlit.app/
   - [📁 Estructura del proyecto](#-estructura-del-proyecto)
   - [⚙️ Instalación y ejecución](#️-instalación-y-ejecución)
   - [🧩 Conclusión general](#-conclusión-general)
+
+---
 
 ## 📘 Descripción general
 
